@@ -109,6 +109,10 @@
     {
         [self setTitleColor:buttonConfig[@"textColor"] forState:UIControlStateNormal];
     }
+    if (buttonConfig[@"font"])
+    {
+        self.titleLabel.font = buttonConfig[@"font"];
+    }
     if (buttonConfig[@"cornerRadius"])
     {
         self.layer.cornerRadius = [buttonConfig[@"cornerRadius"] floatValue];
